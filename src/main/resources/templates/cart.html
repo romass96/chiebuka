@@ -1,0 +1,130 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+
+<section th:fragment="cart" id="cart">
+    <div class="container">
+        <div class="cart-content">
+            <div class="cart-close cart-trigger"><i class="fa fa-close"></i></div>
+            <div class="border-lines-container">
+                <h1 class="no-top-margin border-lines">Корзина</h1>
+            </div>
+            <form id="order-form">
+                <div class="product-preview-small">
+                    <div class="product-remove"><i class="fa fa-close"></i></div>
+                    <div class="product-img">
+                        <img alt="product photo" src="assets/images/menu/dish1.jpg">
+                    </div>
+                    <div class="product-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="product-title">Мясо в маринаде</h4>
+                                Цена: 125 грн/шт.
+                                <div class="product-pieces">
+                                    <input type="text" value="8">
+                                    <div class="product-pieces-up"></div>
+                                    <div class="product-pieces-down"></div>
+                                </div>
+                                шт.
+                            </div>
+                            <div class="col-md-4 product-price">
+                                1000 грн
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .product-content -->
+                </div>
+                <!-- .product-preview-small -->
+                <div class="product-preview-small">
+                    <div class="product-remove"><i class="fa fa-close"></i></div>
+                    <div class="product-img">
+                        <img alt="product photo" src="assets/images/menu/dish2.jpg">
+                    </div>
+                    <div class="product-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="product-title">Курица гриль</h4>
+                                Цена: 85 грн/шт.
+                                <div class="product-pieces">
+                                    <input type="text" value="2">
+                                    <div class="product-pieces-up"></div>
+                                    <div class="product-pieces-down"></div>
+                                </div>
+                                шт.
+                            </div>
+                            <div class="col-md-4 product-price">
+                                170 грн
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .product-content -->
+                </div>
+                <!-- .product-preview-small -->
+                <div class="product-preview-small">
+                    <div class="product-remove"><i class="fa fa-close"></i></div>
+                    <div class="product-img">
+                        <img alt="product photo" src="assets/images/menu/dish3.jpg">
+                    </div>
+                    <div class="product-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="product-title">Салат с капусты</h4>
+                                Цена: 63 грн/шт.
+                                <div class="product-pieces">
+                                    <input type="text" value="1">
+                                    <div class="product-pieces-up"></div>
+                                    <div class="product-pieces-down"></div>
+                                </div>
+                                шт.
+                            </div>
+                            <div class="col-md-4 product-price">
+                               63 грн
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .product-content -->
+                </div>
+                <!-- .product-preview-small -->
+                <div class="product-preview-small">
+                    <div class="product-img">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="product-title">Доставка</h4>
+                            </div>
+                            <div class="col-md-4 delivery-price">
+                               25 грн
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .product-content -->
+                </div>
+                <div class="delivery-wrapper">
+                    <div class="delivery-img col-md-2">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <div class=col-md-6">
+                        <div class="row">
+                            <h4 class="product-title">Доставка</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 delivery-price">
+                        25 грн
+                    </div>
+                    <!-- .product-content -->
+                </div>
+                <!-- .product-preview-small -->
+                <hr>
+                <p class="text-right text-bigger">Всего: 1258 грн</p>
+                <div class="order-button-wrapper">
+                    <input class="button-yellow button-text-low button-long button-low" type="submit" value="Оформить заказ">
+                </div>
+                <input type="hidden">
+            </form>
+        </div>
+        <!-- .cart-content -->
+    </div>
+    <!-- .container -->
+</section>
+<!-- #cart -->

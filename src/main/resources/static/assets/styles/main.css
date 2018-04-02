@@ -966,7 +966,10 @@ input[type=submit] {
 }
 
 .cart-content .product-preview-small {
-    margin: 35px 0 60px 0;
+    /*margin: 35px 0 60px 0;*/
+    border: 1px solid #c1c6cd;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .cart-trigger {
@@ -1011,6 +1014,10 @@ input[type=submit] {
 
 .delimiter-inline {
     padding: 0 5px;
+}
+
+.delivery-wrapper {
+    display: flex;
 }
 
 .flexslider {
@@ -1901,6 +1908,11 @@ input[type=submit] {
 
 .opening-hours-wrapper {
     max-width: 400px;
+}
+
+.order-button-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .owl-carousel.owl-navigation-box .owl-next,
@@ -2828,8 +2840,9 @@ input[type=submit] {
 }
 
 .product-preview-small {
-    overflow: auto;
+    overflow: visible;
     margin: 25px 0 20px 0;
+    position: relative;
 }
 
 .product-preview-small .product-content {
@@ -2847,16 +2860,35 @@ input[type=submit] {
     font-size: 45px;
 }
 
+.product-preview-small .product-img img {
+    width: 83px;
+}
+
 .product-preview-small .product-price {
     font-size: 18px;
     text-align: right;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .product-preview-small .product-title {
     font-family: 'Playfair Display', serif;
     margin-top: 0;
     font-size: 17px;
+}
+
+.product-remove {
+    right: -8px;
+    top: -13px;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.7;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: absolute;
+    padding: 12px 14px;
+    cursor: pointer;
 }
 
 .relative-container {

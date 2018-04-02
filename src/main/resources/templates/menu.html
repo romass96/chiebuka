@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
     <link rel="stylesheet" href="assets/styles/preloader.css" type="text/css">
 
-    <title>Pizzeria</title>
+    <title>CHIEBUKA RESTAURANT</title>
 
     <script type="text/javascript" src="assets/js/modernizr-custom.min.js"></script>
 </head>
@@ -225,118 +225,7 @@
         <!-- .container -->
     </section>
 
-    <section id="cart">
-        <div class="container">
-            <div class="cart-content">
-                <div class="cart-close cart-trigger"><i class="fa fa-close"></i></div>
-                <div class="border-lines-container">
-                    <h1 class="no-top-margin border-lines">Корзина</h1>
-                </div>
-                <form>
-                    <div class="product-preview-small">
-                        <div class="product-img">
-                            <img alt="product photo" src="assets/images/products/1_small.png">
-                        </div>
-                        <div class="product-content">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4 class="product-title">Vegetarian Pizza</h4>
-                                    Цена: 125 грн/шт.
-                                    <div class="product-pieces">
-                                        <input type="text" value="1">
-                                        <div class="product-pieces-up"></div>
-                                        <div class="product-pieces-down"></div>
-                                    </div>
-                                    шт.
-                                </div>
-                                <div class="col-md-4 product-price">
-                                    125 грн
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-content -->
-                    </div>
-                    <!-- .product-preview-small -->
-                    <div class="product-preview-small">
-                        <div class="product-img">
-                            <img alt="product photo" src="assets/images/products/1_small.png">
-                        </div>
-                        <div class="product-content">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4 class="product-title">Vegetarian Pizza</h4>
-                                    Цена: 125 грн/шт.
-                                    <div class="product-pieces">
-                                        <input type="text" value="1">
-                                        <div class="product-pieces-up"></div>
-                                        <div class="product-pieces-down"></div>
-                                    </div>
-                                    шт.
-                                </div>
-                                <div class="col-md-4 product-price">
-                                    125 грн
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-content -->
-                    </div>
-                    <!-- .product-preview-small -->
-                    <div class="product-preview-small">
-                        <div class="product-img">
-                            <img alt="product photo" src="assets/images/products/1_small.png">
-                        </div>
-                        <div class="product-content">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4 class="product-title">Vegetarian Pizza</h4>
-                                    Цена: 125 грн/шт.
-                                    <div class="product-pieces">
-                                        <input type="text" value="1">
-                                        <div class="product-pieces-up"></div>
-                                        <div class="product-pieces-down"></div>
-                                    </div>
-                                    шт.
-                                </div>
-                                <div class="col-md-4 product-price">
-                                    125 грн
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-content -->
-                    </div>
-                    <!-- .product-preview-small -->
-                    <div class="product-preview-small">
-                        <div class="product-img">
-                            <i class="fa fa-truck"></i>
-                        </div>
-                        <div class="product-content">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4 class="product-title">Доставка</h4>
-                                </div>
-                                <div class="col-md-4 product-price">
-                                    35 грн
-                                </div>
-                            </div>
-                        </div>
-                        <!-- .product-content -->
-                    </div>
-                    <!-- .product-preview-small -->
-                    <hr>
-                    <p class="text-right text-bigger">Всего: 750 грн</p>
-                    <div class="row text-xs-center">
-                        <div class="col-sm-6 text-right text-xs-center">
-                            <div class="margin-15"></div>
-                            <a href="#section-delivery" class="button-yellow button-text-low button-long button-low scroll-to cart-trigger">Оформить заказ</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- .cart-content -->
-        </div>
-        <!-- .container -->
-    </section>
-    <!-- #cart -->
+    <section th:insert="cart :: cart"></section>
 
     <footer class="page-footer">
         <div class="site-info">

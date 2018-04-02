@@ -1018,6 +1018,25 @@ input[type=submit] {
 
 .delivery-wrapper {
     display: flex;
+    align-items: center;
+}
+
+.delivery-wrapper .delivery-img {
+    flex-grow: 1;
+}
+
+.delivery-wrapper .delivery-img i {
+    color: #f4cd03;
+    padding: 0 20px;
+    font-size: 45px;
+}
+
+.delivery-wrapper .delivery-title {
+    flex-grow: 8;
+}
+
+.delivery-wrapper .delivery-price {
+    flex-grow: 1;
 }
 
 .flexslider {
@@ -2888,6 +2907,9 @@ input[type=submit] {
     transition: all 0.2s ease-out;
     position: absolute;
     padding: 12px 14px;
+}
+
+.product-remove i {
     cursor: pointer;
 }
 
